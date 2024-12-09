@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 from decouple import config
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -122,6 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+OPENWEATHER_API_KEY = os.getenv('OPENWEATHER_API_KEY')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
