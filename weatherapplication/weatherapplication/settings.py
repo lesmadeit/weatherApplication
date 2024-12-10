@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-OPENWEATHER_API_KEY = os.getenv('OPENWEATHER_API_KEY')
+
 
 
 # Default primary key field type
